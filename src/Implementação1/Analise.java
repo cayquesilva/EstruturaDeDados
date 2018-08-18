@@ -44,12 +44,12 @@ public class Analise {
     }
     
     public static int buscaLinear(int elemento, int vet[]){
-        int i=0;
-        while( i < vet.length && vet[i] != elemento){
-            i++;
+        int i=0; //c1
+        while( i < vet.length && vet[i] != elemento){ // c2*i ; c3*i
+            i++; //c4*i
         }
-        return (i != vet.length)? i : -1;
-    }
+        return (i != vet.length)? i : -1; //c5 ;c6
+    } // custo = c1+c2*i+c3*i+c4*i+c5+c6
 
 
     public static int buscaBinaria(int elemento, int vet[]){
